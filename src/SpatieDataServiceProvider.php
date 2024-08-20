@@ -13,7 +13,9 @@ class SpatieDataServiceProvider implements ServiceProviderInterface
     public function register(\DI\ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->addDefinitions([
-            DataContainer::class
+            DataContainer::class=>\DI\factory(function() {
+                return DataContainer::get();
+            })
         ]);
     }
 }
