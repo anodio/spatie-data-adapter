@@ -1,0 +1,11 @@
+{
+  "name": "anodio/spatie-data-adapter",
+    "autoload": {
+        "psr-4": {
+        "Anodio\\SpatieDataAdapter\\": "src/"
+        }
+    },
+    "require": {
+        "spatie/laravel-data": "^4.8"
+    }
+}
